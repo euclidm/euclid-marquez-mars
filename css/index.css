@@ -1,0 +1,57 @@
+body{
+    background-color: #E9E9E7;
+    color: #565962;
+    font-family: 'Fredoka';
+    padding-top: 100px;
+}
+
+h1{
+    font-size: 64px;
+    font-weight: 600;
+    text-align: center;
+    
+}
+
+h2{
+    font-size: 36px;
+    font-weight: 500;
+}
+
+p{
+    color:#7C7F88;
+}
+
+a{
+    color: #80807F;
+    padding: 10px;
+}
+
+section{
+    margin-bottom: 50px;
+    padding: 25px; /* temporary */
+    padding-left: 100px; /* temporary */
+}
+
+#Experience ul{
+    list-style: none;
+    padding: 0;
+}
+
+#Experience li{
+    background-color: #565962;
+    color: #E9E9E7;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+#Connect{
+    text-align: center;
+}
+
+#Connect a{
+    text-decoration: none;
+}
+
+#Connect a:hover{
+    text-decoration: underline;
+}

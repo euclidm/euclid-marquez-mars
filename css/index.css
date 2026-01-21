@@ -52,6 +52,7 @@ section{
     text-decoration: none;
 }
 
-#Connect a:hover{
-    text-decoration: underline;
+#Connect img{
+    width:30px;
+    height:30px;
 }

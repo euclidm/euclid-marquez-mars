@@ -1,7 +1,7 @@
 body{
     background-color: #E9E9E7;
     color: #565962;
-    font-family: 'Fredoka';
+    font-family: 'Fredoka', sans-serif;
     padding-top: 150px;
 }
 
@@ -28,7 +28,7 @@ p{
 
 nav{
     position: fixed;
-    top: 30px;
+    top: 0px;
     left: 0px;
     display: flex;
     width: 100%;
@@ -55,7 +55,7 @@ section{
     padding-left: 100px; /* temporary */
 }
 
-#Experience{
+#experience{
     max-width: 1000px;
 }
 
@@ -79,7 +79,7 @@ section{
     color: #7C7F88;
 }
 
-#Connect{
+#connect{
     text-align: center;
 }
 

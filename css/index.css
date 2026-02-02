@@ -2,14 +2,15 @@ body{
     background-color: #E9E9E7;
     color: #565962;
     font-family: 'Fredoka', sans-serif;
-    padding-top: 150px;
+    padding-top: 50px;
 }
 
 h1{
     font-size: 64px;
     font-weight: 600;
     text-align: center;
-    
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 h2{
@@ -27,14 +28,13 @@ p{
 }
 
 nav{
-    position: fixed;
-    top: 0px;
-    left: 0px;
+    margin: 0 auto;
+    top: 0;
+    width: 600px;
     display: flex;
-    width: 100%;
     justify-content: center;
-    text-align: center;
-    padding: 5px 0;
+    align-items: center;
+    border-radius: 8px;
     background-color: #565962;
 }
 
@@ -50,13 +50,9 @@ nav a{
 }
 
 section{
-    margin-bottom: 50px;
-    padding: 25px; /* temporary */
-    padding-left: 100px; /* temporary */
-}
-
-#experience{
     max-width: 1000px;
+    margin: 0 auto;
+    padding: 25px; /* temporary */
 }
 
 .experience{
@@ -79,8 +75,10 @@ section{
     color: #7C7F88;
 }
 
+
 #connect{
     text-align: center;
+    align-items: center;
 }
 
 .connect-links{

@@ -1,3 +1,8 @@
+/* ---------------
+>> Desktop Size
+--------------- */
+
+/* [0] Global Style */
 body{
     background-color: #E9E9E7;
     color: #565962;
@@ -14,22 +19,23 @@ h1{
 }
 
 h2{
-    font-size: 36px;
+    font-size: 40px;
     font-weight: 500;
 }
 
 h3{
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 400;
 }
 
 p{
+    font-size: 18px;
     color:#7C7F88;
 }
 
+/* [1] Navigation Layout & Components */
 nav{
     margin: 0 auto;
-    top: 0;
     width: 600px;
     display: flex;
     justify-content: center;
@@ -38,57 +44,126 @@ nav{
     background-color: #565962;
 }
 
-nav a{
-    text-decoration: none;
-    color:#E9E9E7
-}
+    nav a{
+        text-decoration: none;
+        color:#E9E9E7
+    }
 
-.nav-container{
-    display: flex;
-    gap: 20px;
-    padding: 10px 20px;
-}
+    .nav-container{
+        display: flex;
+        gap: 20px;
+        padding: 10px 20px;
+    }
 
+/* [2] Section Layout & Components*/
 section{
     max-width: 1000px;
     margin: 0 auto;
     padding: 25px; /* temporary */
 }
 
-.experience{
-    margin-bottom: 50px;
+section:last-of-type{
+    border-top: 1px solid #7C7F88;
 }
 
-.experience-title{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* [2.1] Experience */
+    .experience{
+        margin-bottom: 50px;
+    }
+
+    .experience-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .experience-title h3{
+        margin: 0;
+    }
+
+    .experience-title .date{
+        font-size: 14px;
+        font-weight: 400;
+        color: #7C7F88;
+    }
+
+    /* [2.4] Connect */
+    #connect{
+        text-align: right;
+        align-items: center;
+    }
+
+    #connect h2{
+        font-size: 18px;
+    }
+
+    .connect-links{
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        margin-top: 20px;
+        gap: 20px
+    }
+
+    .connect-links .portfolio img{
+        width: 40px;
+    }
+
+    .connect-links img{
+        width: 30px;
+        height: auto;
+    }
+
+    .connect-links .portfolio{
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: start;
+    }
+
+    .social-links{
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+    }
+
+
+
+/* ---------------
+>> Tablet/iPad Size
+--------------- */
+
+@media(max-width: 900px) {
+    
+    h1{font-size: 60px;}
+    h2{font-size: 36px;}
+    h3{font-size: 24px;}
+    p{font-size: 16px;}
+
+    nav{
+        width: 85%;
+        padding: 8px 0;
+    }
+
+    nav a{font-size: 16px;}
+
+
 }
 
-.experience-title h3{
-    margin: 0;
-}
+/* ---------------
+>> Mobile Size
+--------------- */
 
-.experience-title .date{
-    font-size: 14px;
-    font-weight: 400;
-    color: #7C7F88;
-}
+@media(max-width: 600px) {
+    
+    h1{font-size: 48px;}
+    h2{font-size: 32px;}
+    h3{font-size: 20px;}
+    p{font-size: 16px;}
 
-
-#connect{
-    text-align: center;
-    align-items: center;
-}
-
-.connect-links{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    gap: 20px
-}
-
-.connect-links img{
-    width: 30px;
-    height: auto;
+    nav{
+        width: 95%;
+        padding: 4px 0;
+    }
+    
+    nav a{font-size: 16px}
 }

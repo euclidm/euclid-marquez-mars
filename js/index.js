@@ -1,15 +1,13 @@
-// Website Body
-const body = document.body;
+const body = document.body; // Website Body
 
-// Footer
-const footer = document.querySelector('footer');
+const footerElement = document.createElement('footer'); // Footer Element
+body.appendChild(footerElement);
 
-// Date
-const currentDate = new Date();
-const currentYear = currentDate.getFullYear;
+const currentDate = new Date(); // Date
+const currentYear = currentDate.getFullYear();
 
-// Copyright
-const copyright = document.createElement('p');
+const footer = document.querySelector("footer"); // DOM Selection
+
+const copyright = document.createElement('p'); // Copyright
 copyright.innerHTML =`@ Euclid Marquez ${currentYear}`;
-
 footer.appendChild(copyright);

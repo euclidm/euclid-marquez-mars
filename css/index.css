@@ -67,10 +67,6 @@ section{
     padding: 25px; /* temporary */
 }
 
-section:last-of-type{
-    border-top: 1px solid #7C7F88;
-}
-
     /* [2.1] Experience */
     .experience{
         margin-bottom: 50px;
@@ -112,6 +108,7 @@ section:last-of-type{
 
     /* [2.4] Connect */
     #connect{
+        border-top: 1px solid #7C7F88;
         text-align: right;
         align-items: center;
     }
@@ -149,7 +146,9 @@ section:last-of-type{
         justify-content: flex-end;
     }
 
-
+    #message-form{
+        border-top: 1px solid #7C7F88;
+    }
 
 /* ---------------
 >> Tablet/iPad Size

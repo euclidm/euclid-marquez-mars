@@ -67,10 +67,6 @@ section{
     padding: 25px; /* temporary */
 }
 
-section:last-of-type{
-    border-top: 1px solid #7C7F88;
-}
-
     /* [2.1] Experience */
     .experience{
         margin-bottom: 50px;
@@ -112,6 +108,7 @@ section:last-of-type{
 
     /* [2.4] Connect */
     #connect{
+        border-top: 1px solid #7C7F88;
         text-align: right;
         align-items: center;
     }
@@ -149,7 +146,52 @@ section:last-of-type{
         justify-content: flex-end;
     }
 
+    /* [2.5] Message Form */
+    #message-form{
+        border-top: 1px solid #7C7F88;
+    }
 
+    #message-form form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    #message-form button{
+        background-color: #7a9c81;
+        border: none;
+        border-radius: 3px;
+        font-family: 'Fredoka', sans-serif;
+        font-weight: 400;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    #message-form input, #message-form textarea{
+        padding: 5px;
+    }
+
+    /* [2.6] Message List */
+    #messages button{
+        margin-left: 10px;
+        background-color: #c48585;
+        border: none;
+        border-radius: 3px;
+        font-family: 'Fredoka', sans-serif;
+        font-weight: 400;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    #messages ul{
+        list-style: none;
+        padding: 0;
+    }
+
+    #messages li{
+        margin-bottom: 20px;
+    }
 
 /* ---------------
 >> Tablet/iPad Size

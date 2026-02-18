@@ -28,3 +28,18 @@ for (let i = 0; i < skills.length; i++){
     skill.textContent = skills[i];
     skillsList.appendChild(skill);
 };
+
+// [3] Message Form Stuff
+const messageForm = document.querySelector(`form[name="leave_message"]`); // Dom Selection
+
+messageForm.addEventListener("submit", (event) => {
+    event.preventDefault(); // Stop Refresh
+
+    const usersName = event.target.usersName.value;
+    const usersEmail = event.target.usersEmail.value;
+    const usersMessage = event.target.usersMessage.value;
+
+    console.log(`Submitted Info: From: ${usersName} - @${usersName} - Message: ${usersMessage}`);
+
+    messageForm.reset(); // Resets & Leaves the Input Box Blank after Submitting!
+});

@@ -88,6 +88,24 @@ section{
         color: #7C7F88;
     }
 
+    /* [2.2] Projects */
+    #projects ul{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 10px;
+        padding: 0;
+        list-style: none;
+    }
+
+    #projects li:after{
+        content: "•";
+        margin: 0 10px;
+    }
+
+    #projects li:last-child:after{
+        content: "";
+    }
+
     /* [2.3] Skills */
     #skills ul{
         display: flex;

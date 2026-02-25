@@ -80,3 +80,34 @@ messageForm.addEventListener("submit", (event) => {
     // [3.2.4] Restart Form
     messageForm.reset(); // Resets & Leaves the Input Box Blank after Submitting!
 });
+
+// [4] Fetch API
+
+    // [4.1] Creating Fetch
+    fetch("https://api.github.com/users/euclidm/repos")
+
+    // [4.2] Handle Json Data
+        .then(function(response){
+            return response.json();
+        })
+
+        .then(function(data){
+            const repositories = data;
+            console.log("Repositories: ", data);
+
+            const projectSection = document.querySelector("#projects");
+            const projectList = projectSection.querySelector("ul");
+
+            for (let i = 0; i < repositories.length; i++){
+                const project = document.createElement("li");
+                project.innerText = repositories[i].name;
+                projectList.appendChild(project);
+            }
+        })
+
+    // [4.3] Handle Fetch Errors
+        .catch(function(error){
+            console.error("Error fetching repositories: ", error);
+            const projectSection = querySelector.querySelector("#projects ul");
+            projectSection.innerHTML += "<li>Unable to load projects...</li>";
+        });

@@ -108,6 +108,6 @@ messageForm.addEventListener("submit", (event) => {
     // [4.3] Handle Fetch Errors
         .catch(function(error){
             console.error("Error fetching repositories: ", error);
-            const projectSection = querySelector.querySelector("#projects ul");
+            const projectSection = document.querySelector("#projects ul");
             projectSection.innerHTML += "<li>Unable to load projects...</li>";
         });

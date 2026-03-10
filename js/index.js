@@ -100,7 +100,10 @@ messageForm.addEventListener("submit", (event) => {
 
             for (let i = 0; i < repositories.length; i++){
                 const project = document.createElement("li");
-                project.innerText = repositories[i].name;
+                const link = document.createElement("a");
+                link.href = repositories[i].html_url;
+                link.textContent = repositories[i].name;
+                project.appendChild(link);
                 projectList.appendChild(project);
             }
         })

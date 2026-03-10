@@ -62,7 +62,7 @@ messageForm.addEventListener("submit", (event) => {
     newMessage.innerHTML = `<a href="mailto:${usersEmail}">${usersName}</a>
                             <span>: ${usersMessage}</span>`;
 
-    // [3.2.3] Remove Button Handler
+    // [3.2.4] Remove Button Handler
     const removeButton = document.createElement("button");
     removeButton.textContent = "remove";
     removeButton.type = "button";
@@ -100,7 +100,10 @@ messageForm.addEventListener("submit", (event) => {
 
             for (let i = 0; i < repositories.length; i++){
                 const project = document.createElement("li");
-                project.innerText = repositories[i].name;
+                const link = document.createElement("a");
+                link.href = repositories[i].html_url;
+                link.textContent = repositories[i].name;
+                project.appendChild(link);
                 projectList.appendChild(project);
             }
         })
@@ -111,3 +114,16 @@ messageForm.addEventListener("submit", (event) => {
             const projectSection = document.querySelector("#projects ul");
             projectSection.innerHTML += "<li>Unable to load projects...</li>";
         });
+
+// [5] Dark Mode
+const darkModeButton = document.getElementById("dark-mode-toggle");
+
+darkModeButton.addEventListener("click", function () {
+  document.body.classList.toggle("dark-mode");
+
+  if(document.body.classList.contains("dark-mode")){
+    darkModeButton.textContent = "☀️";
+  } else {
+    darkModeButton.textContent = "🌙";
+  }
+});

@@ -290,9 +290,17 @@ body.dark-mode #messages li a{
     p{font-size: 16px;}
 
     nav{
-        width: 95%;
+        width: 80%;
         padding: 4px 0;
     }
     
-    nav a{font-size: 0.9rem}
+    .nav-container{
+        gap: 10px;
+        padding: 6px 12px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    nav a{font-size: 0.65rem}
 }
